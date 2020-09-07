@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name        = 'spree_product_zoom'
   s.version     = '2.2'
   s.summary     = 'Add product image zoom functionality via a lightbox'
-  s.required_ruby_version = '>= 1.8.7'
+  s.required_ruby_version = '>= 1.9.3'
 
   s.author    = 'John Dyer'
   s.email     = 'jdyer@spreecommerce.com'
@@ -14,12 +14,12 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.0.0'
+  s.add_dependency 'spree_core', '~> 4.1'
 
-  s.add_development_dependency 'capybara', '1.0.1'
-  s.add_development_dependency 'factory_girl', '~> 2.6.4'
+  s.add_development_dependency 'capybara',
+  s.add_development_dependency 'factory_girl'
   s.add_development_dependency 'ffaker'
-  s.add_development_dependency 'rspec-rails',  '~> 2.9'
-  s.add_development_dependency 'sass-rails', '~> 4.0.2'
+  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'sass-rails'
   s.add_development_dependency 'sqlite3'
 end
